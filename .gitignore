@@ -1,0 +1,6 @@
+# Configuração local do assistente e documentos internos do cliente
+.claude/
+*.docx
+*.pdf
+.DS_Store
+Thumbs.db
