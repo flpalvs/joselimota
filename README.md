@@ -34,8 +34,9 @@ Depois acesse `http://localhost:4599`.
 
 ## Observações
 
-- O canal de contato é exclusivamente o WhatsApp. Os botões de consulta médica e odontológica usam as
-  mensagens definidas no briefing; menu, botão do topo e botão flutuante usam uma mensagem genérica.
+- O canal de contato é exclusivamente o WhatsApp. Os botões de consulta médica e odontológica têm mensagens
+  próprias ("Olá! Gostaria de informações sobre consulta médica/odontológica com a Dra. Joseli");
+  menu, botão do topo e botão flutuante usam uma mensagem genérica.
 - O link da Política de Privacidade no rodapé ainda é um placeholder (aviso via JS).
 - Há um hook `whatsapp_click` em `js/main.js`, pronto para integração com GA4/GTM.
 - O conteúdo clínico não deve ser alterado sem aprovação da Dra. Joseli.
