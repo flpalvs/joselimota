@@ -14,10 +14,10 @@ O conteúdo segue o documento "Copy Final Landing Page" enviado pela contratante
 
 1. Abertura: título, credenciais e dois botões separados (consulta médica / odontológica)
 2. Cards Medicina e Odontologia
-3. Medicina: motivos para procurar uma avaliação, "Muito além do peso", "Seu objetivo é o ponto de partida"
+3. Medicina: "Quando procurar uma avaliação médica?", "Muito além do peso", "Seu objetivo é o ponto de partida"
 4. Como funciona o atendimento (Avaliar, Planejar, Acompanhar, Reavaliar)
 5. Sobre a Dra. Joseli Mota
-6. Áreas de atuação e condições acompanhadas (Medicina)
+6. Atuação médica e condições acompanhadas (Medicina)
 7. Odontologia: funções orais, avaliação individualizada, sinais e ressalva
 8. Como funciona a consulta odontológica
 9. Perguntas frequentes (accordion com abertura suave)
