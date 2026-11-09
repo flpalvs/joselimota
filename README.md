@@ -21,7 +21,7 @@ O conteúdo segue o documento "Copy Final Landing Page" enviado pela contratante
 7. Odontologia: funções orais, avaliação individualizada, sinais e ressalva
 8. Como funciona a consulta odontológica
 9. Perguntas frequentes (accordion com abertura suave)
-10. Atendimentos: endereços de Águas Claras e Santa Maria
+10. Depoimentos de pacientes (nome e texto)
 11. Fechamento com os dois botões de agendamento e rodapé
 
 ## Como visualizar
@@ -34,7 +34,7 @@ Depois acesse `http://localhost:4599`.
 
 ## Observações
 
-- O canal de contato é exclusivamente o WhatsApp. Os botões de consulta médica e odontológica têm mensagens
+- O contato é por ligação e WhatsApp, no (61) 99130-6479; o rodapé tem um link para cada um. Os botões de consulta médica e odontológica têm mensagens
   próprias ("Olá! Gostaria de informações sobre consulta médica/odontológica com a Dra. Joseli");
   menu, botão do topo e botão flutuante usam uma mensagem genérica.
 - O link da Política de Privacidade no rodapé ainda é um placeholder (aviso via JS).
