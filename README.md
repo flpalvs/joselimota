@@ -37,6 +37,6 @@ Depois acesse `http://localhost:4599`.
 - O contato é por ligação e WhatsApp, no (61) 99130-6479; o rodapé tem um link para cada um. Os botões de consulta médica e odontológica têm mensagens
   próprias ("Olá! Gostaria de informações sobre consulta médica/odontológica com a Dra. Joseli");
   menu, botão do topo e botão flutuante usam uma mensagem genérica.
-- O link da Política de Privacidade no rodapé ainda é um placeholder (aviso via JS).
+- A Política de Privacidade fica em `politica-de-privacidade.html`, ligada pelo rodapé.
 - Há um hook `whatsapp_click` em `js/main.js`, pronto para integração com GA4/GTM.
 - O conteúdo clínico não deve ser alterado sem aprovação da Dra. Joseli.

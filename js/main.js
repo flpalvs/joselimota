@@ -123,13 +123,4 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ---------- Placeholder da Política de Privacidade ----------
-  const privacyLink = document.getElementById('privacyLink');
-  if (privacyLink) {
-    privacyLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      alert('Política de Privacidade em publicação.');
-    });
-  }
-
 });

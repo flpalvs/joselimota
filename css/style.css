@@ -500,7 +500,24 @@ footer{background:var(--verde);color:rgba(247,243,236,.9);padding:0 0 30px;font-
 .footer-top__item span{font-size:.97rem;}
 
 .footer-grid{display:grid;gap:34px;padding-top:44px;}
-@media(min-width:768px){ .footer-grid{grid-template-columns:1.4fr 1fr 1fr 1fr;} }
+@media(min-width:768px){ .footer-grid{grid-template-columns:1fr 1fr;} }
+@media(min-width:1100px){ .footer-grid{grid-template-columns:1.1fr 1fr 1fr 1.45fr;} }
+
+/* Contato: título sublinhado, lista com ícones e destaque de hora marcada */
+footer h4.footer-contact-title{display:inline-block;font-size:1.05rem;letter-spacing:.14em;padding-bottom:8px;border-bottom:3px solid var(--dourado);margin-bottom:20px;}
+.contact-list{display:grid;gap:12px;}
+.contact-list li{display:flex;gap:12px;align-items:flex-start;line-height:1.5;}
+.contact-list svg{width:22px;height:22px;flex-shrink:0;color:var(--dourado);margin-top:1px;}
+footer .contact-list a{text-decoration:none;font-weight:600;color:var(--marfim);}
+footer .contact-list a:hover{text-decoration:underline;text-decoration-color:var(--dourado);}
+.appointment-box{
+  display:flex;gap:16px;align-items:flex-start;margin-top:22px;padding:18px 18px 18px 16px;
+  border:1px solid rgba(184,154,99,.6);border-radius:14px;background:rgba(247,243,236,.05);
+}
+.appointment-box svg{width:32px;height:32px;flex-shrink:0;color:var(--dourado);}
+.appointment-box div{border-left:1px solid rgba(184,154,99,.5);padding-left:16px;}
+.appointment-box strong{display:block;color:var(--marfim);font-size:.9rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;line-height:1.35;}
+.appointment-box p{margin-top:6px;font-size:.95rem;line-height:1.55;}
 footer h4{color:var(--marfim);font-family:var(--sans);font-size:.92rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;font-weight:700;}
 footer .brand-name{color:var(--marfim);display:block;}
 footer .brand-tag{color:var(--dourado);display:block;margin:6px 0 0;white-space:normal;}
@@ -515,6 +532,103 @@ footer a:hover{text-decoration-color:var(--dourado);}
   margin-top:26px;padding-top:24px;border-top:1px solid rgba(247,243,236,.14);
   display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.92rem;opacity:.85;
 }
+
+/* ---------- Política de Privacidade ---------- */
+.legal-back{
+  display:inline-flex;align-items:center;gap:8px;font-size:.95rem;font-weight:700;color:var(--verde);
+  padding:10px 16px;border:1px solid rgba(24,56,47,.25);border-radius:999px;transition:background .25s ease;
+}
+.legal-back:hover{background:rgba(24,56,47,.05);}
+.legal-back{white-space:nowrap;flex-shrink:0;}
+@media(max-width:480px){ .legal-back{padding:8px 14px;} .legal-back-extra{display:none;} }
+.legal-back svg{width:18px;height:18px;}
+.legal{padding:140px 0 96px;}
+@media(max-width:767px){ .legal{padding:116px 0 64px;} }
+.legal-wrap{max-width:860px;}
+.legal h1{margin-top:4px;}
+.legal-updated{margin-top:12px;color:var(--texto-2);font-size:.97rem;}
+.legal section{margin-top:44px;}
+.legal h2{font-size:clamp(1.45rem,2.6vw,1.85rem);margin-bottom:14px;}
+.legal p{max-width:none;color:var(--texto);}
+.legal p + p{margin-top:12px;}
+.legal a:not(.btn){color:var(--verde);font-weight:600;text-decoration:underline;text-decoration-color:var(--dourado);text-underline-offset:3px;}
+.legal-list{display:grid;gap:10px;margin:14px 0;padding-left:0;}
+.legal-list li{position:relative;padding-left:22px;color:var(--texto);}
+.legal-list li::before{content:'';position:absolute;left:4px;top:.68em;width:7px;height:7px;border-radius:50%;background:var(--dourado);}
+@media(min-width:700px){ .legal-list--cols{grid-template-columns:1fr 1fr;column-gap:28px;} }
+.legal-summary{
+  margin-top:32px;padding:28px 30px;background:var(--branco);border:1px solid rgba(24,56,47,.08);
+  border-left:3px solid var(--dourado);border-radius:var(--radius);
+}
+.legal-summary h2{font-size:1.5rem;margin-bottom:16px;}
+.legal-summary .check-list li{color:var(--texto);font-size:1.02rem;}
+.legal-table-wrap{overflow-x:auto;margin:16px 0;border:1px solid rgba(24,56,47,.12);border-radius:var(--radius);background:var(--branco);}
+.legal-table{width:100%;border-collapse:collapse;font-size:.97rem;min-width:560px;}
+.legal-table th{text-align:left;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase;color:var(--verde);background:rgba(184,154,99,.14);padding:12px 16px;}
+.legal-table td{padding:14px 16px;border-top:1px solid rgba(24,56,47,.1);vertical-align:top;color:var(--texto);}
+.legal-cta{
+  margin-top:56px;padding:30px;border-radius:16px;background:var(--areia);
+  display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;
+}
+.legal-cta p{font-family:var(--serif);font-size:1.45rem;font-weight:600;color:var(--verde);}
+.legal-footer{padding:4px 0 30px;}
+.legal-footer .footer-bottom{border-top:0;margin-top:0;}
+
+/* ---------- Aviso de cookies ---------- */
+.cookie-banner{
+  position:fixed;left:16px;right:16px;bottom:16px;z-index:300;
+  max-width:560px;padding:24px 24px 20px;border-radius:16px;
+  background:var(--branco);border:1px solid rgba(24,56,47,.12);border-top:3px solid var(--dourado);
+  box-shadow:0 24px 60px -20px rgba(24,56,47,.45);
+  max-height:calc(100vh - 32px);overflow-y:auto;overscroll-behavior:contain;
+  display:none;
+}
+.cookie-banner.is-visible{display:block;animation:cookieIn .4s cubic-bezier(.22,1,.36,1);}
+@keyframes cookieIn{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+@media(min-width:640px){ .cookie-banner{left:24px;bottom:24px;right:auto;} }
+.cookie-title{font-family:var(--serif);font-size:1.45rem;font-weight:600;color:var(--verde);line-height:1.2;}
+.cookie-text{margin-top:8px;font-size:.97rem;color:var(--texto);max-width:none;line-height:1.55;}
+.cookie-text a{color:var(--verde);font-weight:700;text-decoration:underline;text-decoration-color:var(--dourado);text-underline-offset:3px;}
+.cookie-panel{margin-top:16px;display:grid;gap:10px;}
+.cookie-panel[hidden]{display:none;}
+.cookie-option{
+  display:flex;gap:14px;align-items:center;justify-content:space-between;
+  padding:12px 14px;border:1px solid rgba(24,56,47,.12);border-radius:10px;background:var(--marfim);cursor:pointer;
+}
+div.cookie-option{cursor:default;}
+.cookie-option div{display:flex;flex-direction:column;gap:2px;}
+.cookie-option strong{font-size:.95rem;color:var(--verde);}
+.cookie-option span:not(.cookie-switch):not(.cookie-always){font-size:.9rem;color:var(--texto-2);line-height:1.45;}
+.cookie-always{flex-shrink:0;font-size:.82rem;font-weight:700;color:var(--dourado-texto);white-space:nowrap;}
+.cookie-option input{position:absolute;opacity:0;width:1px;height:1px;}
+.cookie-switch{
+  position:relative;flex-shrink:0;width:46px;height:26px;border-radius:999px;background:#c9c3b8;transition:background .25s ease;
+}
+.cookie-switch::after{
+  content:'';position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;
+  box-shadow:0 1px 3px rgba(0,0,0,.2);transition:transform .25s ease;
+}
+.cookie-option input:checked + .cookie-switch{background:var(--verde);}
+.cookie-option input:checked + .cookie-switch::after{transform:translateX(20px);}
+.cookie-option input:focus-visible + .cookie-switch{outline:2px solid var(--dourado);outline-offset:2px;}
+.cookie-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;align-items:center;}
+.cookie-btn{
+  font-family:var(--sans);font-size:.9rem;font-weight:700;letter-spacing:.02em;cursor:pointer;
+  padding:12px 20px;border-radius:999px;border:1.5px solid var(--verde);transition:background .2s ease,color .2s ease;
+}
+.cookie-btn--solid{background:var(--verde);color:#fff;}
+.cookie-btn--solid:hover{background:var(--verde-2);}
+.cookie-btn--outline{background:transparent;color:var(--verde);}
+.cookie-btn--outline:hover{background:rgba(24,56,47,.06);}
+.cookie-btn--link{background:none;border-color:transparent;color:var(--verde);text-decoration:underline;text-decoration-color:var(--dourado);text-underline-offset:3px;padding-inline:4px;margin-right:auto;}
+.cookie-btn:focus-visible{outline:2px solid var(--dourado);outline-offset:2px;}
+@media(max-width:420px){
+  .cookie-actions .cookie-btn--outline,.cookie-actions .cookie-btn--solid{flex:1 1 0;}
+  .cookie-btn--link{width:100%;text-align:left;}
+}
+.cookie-prefs-link{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-decoration-color:rgba(184,154,99,.6);text-underline-offset:3px;}
+.cookie-prefs-link:hover{text-decoration-color:var(--dourado);}
+.legal .legal-prefs{color:var(--verde);font-weight:600;text-decoration-color:var(--dourado);}
 
 /* ---------- WhatsApp flutuante ---------- */
 .wa-float{
