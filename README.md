@@ -38,5 +38,6 @@ Depois acesse `http://localhost:4599`.
   próprias ("Olá! Gostaria de informações sobre consulta médica/odontológica com a Dra. Joseli");
   menu, botão do topo e botão flutuante usam uma mensagem genérica.
 - A Política de Privacidade fica em `politica-de-privacidade.html`, ligada pelo rodapé.
-- Há um hook `whatsapp_click` em `js/main.js`, pronto para integração com GA4/GTM.
+- Google Tag Manager GTM-MP63BWMH instalado nas três páginas, depois de `js/consent.js` (Consent Mode v2: tudo negado até o aceite).
+- Há um evento `whatsapp_click` no dataLayer (`js/main.js`), com a seção de origem, sem dados pessoais.
 - O conteúdo clínico não deve ser alterado sem aprovação da Dra. Joseli.
