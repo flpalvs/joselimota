@@ -53,7 +53,7 @@
   }
 
   function build() {
-    var policy = document.body.classList.contains('legal-page') ? '#mensuracao' : 'politica-de-privacidade.html#mensuracao';
+    var policy = document.body.classList.contains('legal-page') ? '#mensuracao' : '/politica-de-privacidade.html#mensuracao';
     root = document.createElement('div');
     root.className = 'cookie-banner';
     root.setAttribute('role', 'dialog');
